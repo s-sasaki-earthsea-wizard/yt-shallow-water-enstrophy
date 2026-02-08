@@ -1,55 +1,43 @@
-# プロジェクト名
-プロジェクト名を書いてください。
+# エンストロフィ保存と浅水波のポテンシャル渦度 - YouTube動画
+
+理想流体の2次元流れにおけるエンストロフィ保存と、浅水波方程式におけるポテンシャル渦度の保存を解説するYouTube動画の制作プロジェクトです。
 
 ## 概要
-プロジェクトの概要を書いてください。
+
+「渦」は身近な現象ですが、その背後には美しい保存則が隠れています。この動画では、コーヒーをかき混ぜる渦から出発し、理想流体のエンストロフィ保存、そして浅水波方程式におけるポテンシャル渦度の保存へと段階的に理解を深めていきます。
+
+## 動画構成
+
+| # | セクション | 内容 |
+|---|-----------|------|
+| 1 | 渦って何？ | コーヒーかき混ぜの例から、渦＝回転の濃淡を直感的に理解 |
+| 2 | 理想流体の世界 | 粘性のない理想流体では、渦の"色"が勝手に消えない |
+| 3 | エンストロフィとは | 渦の"濃さの総量"を定量化する保存量 |
+| 4 | 現実は水面が動く | 水面が上下する → 波が出る世界へ |
+| 5 | 浅水波方程式 | 水の厚みが変わると、渦の効き方が変わる |
+| 6 | ポテンシャル渦度 | 渦度そのままではなく、厚みで割った渦が保存される |
+| 7 | 結論 | 2Dの保存構造が浅水でも形を変えて残る |
+
+次回予告: 回転する地球 = コリオリ効果へ
+
+## 主要キーワード
+
+- **渦度 (Vorticity)**: 流体の局所的な回転の強さ
+- **エンストロフィ (Enstrophy)**: 渦度の2乗の積分、2D理想流体で保存
+- **ポテンシャル渦度 (Potential Vorticity)**: 浅水波における保存量（渦度 / 水深）
+
+## ディレクトリ構成
+
+```
+.
+├── docs/                 # 参考文献
+├── instructions/         # 制作ガイドライン
+├── slides-jp/            # スライド・動画素材（Reveal.js）
+└── CLAUDE.md             # 開発ガイドライン
+```
 
 ## 開発環境
-開発環境について書きます。以下が例です。
 
-- OS: Ubuntu-18.04 (AWS EC2 instance xrdp01-gui)
-- Python: 3.8.6
-
-## インストール方法
-インストール方法を書いてください。
-以下のようなコマンドを書くなどすると手順がわかりやすくなるでしょう。
-
-```
-make install
-```
-
-## 使い方
-実行方法やチュートリアルを書いてください。
-必要に応じてスクリーンショットや動画を使ってください。
-
-## その他
-必要なことがあれば書いてください。
-
-_____
-
-# Project name
-Write the name of the project.
-
-## Overview
-Write an overview of the project.
-
-## Development environment
-Write about the development environment. The following is an example.
-
-- OS: Ubuntu-18.04 (AWS EC2 instance xrdp01-gui)
-- Python: 3.8.6
-
-## Installation
-Write down the installation procedure.
-Commands will be useful to make clear as:
-
-```
-make install
-```
-
-## Usage
-Write a running procedure or tutorial.
-Use screenshots and videos if necessary.
-
-## Others
-Anything else, please write here.
+- スライド: [Reveal.js](https://revealjs.com/)
+- TTS: [ElevenLabs](https://elevenlabs.io/)
+- アニメーション: [Manim](https://www.manim.community/)（予定）

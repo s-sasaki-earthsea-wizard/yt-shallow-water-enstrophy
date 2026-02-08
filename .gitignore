@@ -21,3 +21,6 @@ slides-jp/*.pdf
 
 # Claude Code local settings
 .claude/
+
+# Instructions
+instructions/

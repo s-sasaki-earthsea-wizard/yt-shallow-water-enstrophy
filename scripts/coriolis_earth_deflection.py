@@ -308,9 +308,11 @@ class CoriolisEarthDeflection(ThreeDScene):
 # 北半球から赤道に向かって南下する粒子が右（西）に偏向
 SOUTH_LAT_START = 45.0      # 出発緯度 (度)
 SOUTH_LON_START = -90.0     # 出発経度 (度)
-SOUTH_V0 = -0.10            # 南向き初速 (負 = 南)
+SOUTH_V0 = -0.1            # 南向き初速 (負 = 南)
 SOUTH_SIM_TIME = 5.0
 SOUTH_N_STEPS = int(SOUTH_SIM_TIME * 100)
+
+OMEGA_DEMO = 0.2  # コリオリ角運動の角速度
 
 
 class CoriolisEarthSouthward(ThreeDScene):
